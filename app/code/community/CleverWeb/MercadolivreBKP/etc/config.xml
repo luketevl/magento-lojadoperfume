@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <CleverWeb_Mercadolivre>
+            <version>0.1.0</version>
+        </CleverWeb_Mercadolivre>
+    </modules>
+        
+<global>
+        <helpers>
+            <Mercadolivre>
+                <class>CleverWeb_Mercadolivre_Helper</class>
+            </Mercadolivre>  
+        </helpers>
+        
+        <blocks>
+			<Mercadolivre>
+				<class>CleverWeb_Mercadolivre_Block</class>
+			</Mercadolivre>
+		</blocks>
+        
+</global>        
+    
+    
+   <admin>
+        <routers>
+            <mercadolivre>
+                <use>admin</use>
+                <args>
+                    <module>CleverWeb_Mercadolivre</module>
+                    <frontName>mercadolivre</frontName>
+                </args>
+            </mercadolivre>
+        </routers>
+    </admin>
+    
+ 
+    
+    
+    <adminhtml>
+    	<layout>
+            <updates>
+                <mercadolivre>
+                    <file>clevermercadolivre.xml</file>
+                </mercadolivre>
+            </updates>
+        </layout>
+        <menu>
+            <menu1 translate="title" module="Mercadolivre">
+                <title>Mercadolivre</title>
+                <sort_order>80</sort_order>
+                <children>
+                    <menuitem1 module="Mercadolivre">
+                        <title>Gerenciar Anúncios</title>
+                        <action>mercadolivre/anuncios</action>
+                    </menuitem1>
+                    <menuitem2 module="Mercadolivre">
+                        <title>Perguntas</title>
+                        <action>mercadolivre/perguntas</action>
+                    </menuitem2>
+                    <menuitem3 module="Mercadolivre">
+                        <title>Gerenciar Templates</title>
+                        <action>mercadolivre/templates</action>
+                    </menuitem3>
+                    <menuitem4 module="Mercadolivre">
+                        <title>Gerenciar Vendas</title>
+                        <action>mercadolivre/vendas</action>
+                    </menuitem4>
+                </children>                
+            </menu1>
+        </menu>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <menu1 translate="title" module="Mercadolivre">
+							<title>ActiveCodeline Mercadolivre</title>
+                			<sort_order>60</sort_order>
+                            <children>
+                                <menuitem1>
+                                    <title>Menu item 1</title>
+                                </menuitem1>
+                            </children>
+                       </menu1>
+                   </children>
+               </admin>
+           </resources>
+        </acl>
+    </adminhtml>    
+    <args>
+		<modules>
+			<cleverweb_mercadolivre after="Mage_Adminhtml">CleverWeb_Mercadolivre_Adminhtml</cleverweb_mercadolivre>
+		</modules>
+	</args>
+    
+    
+    
+</config>

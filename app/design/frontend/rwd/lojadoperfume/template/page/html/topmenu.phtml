@@ -1,0 +1,25 @@
+<?php
+/**
+ * Clever Web
+ * *
+ * @category    design
+ * @package     rwd_lojadoperfume
+ * @copyright   Copyright (c) 2016-2017 www.cleverweb.com.br
+ */
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see Mage_Page_Block_Html_Topmenu
+ */
+?>
+<?php $_menu = $this->getHtml('level-top') ?>
+
+<?php if($_menu): ?>
+    <nav id="nav">
+        <ol class="nav-primary">
+            <?php echo $_menu ?>
+        </ol>
+    </nav>
+<?php endif ?>

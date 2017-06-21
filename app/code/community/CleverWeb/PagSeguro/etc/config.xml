@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<CleverWeb_PagSeguro>
+			<version>0.1.1</version>
+		</CleverWeb_PagSeguro>
+	</modules>
+	
+	<global>
+		<helpers>
+			<cleverweb_pagseguro>
+				<class>CleverWeb_PagSeguro_Helper</class>
+			</cleverweb_pagseguro>
+		</helpers>
+		
+		<blocks>
+			<cleverweb_pagseguro>
+				<class>CleverWeb_PagSeguro_Block</class>
+			</cleverweb_pagseguro>
+		</blocks>
+		
+		<models>
+			<cleverweb_pagseguro>
+				<class>CleverWeb_PagSeguro_Model</class>
+			</cleverweb_pagseguro>
+		</models>
+		
+		<!-- Tell magento what data to copy from the quote payment object to the order payment object -->
+		<fieldsets>
+			<sales_convert_quote_payment>
+				<strnmcartao>
+					<to_order_payment>*</to_order_payment>
+				</strnmcartao>
+				<meuhash>
+					<to_order_payment>*</to_order_payment>
+				</meuhash>
+				<tokenpagamento>
+					<to_order_payment>*</to_order_payment>
+				</tokenpagamento>
+				<creditcardholdername>
+					<to_order_payment>*</to_order_payment>
+				</creditcardholdername>
+				<dtanascimento>
+					<to_order_payment>*</to_order_payment>
+				</dtanascimento>
+				<strcpftit>
+					<to_order_payment>*</to_order_payment>
+				</strcpftit>
+				<strdddtelfone>
+					<to_order_payment>*</to_order_payment>
+				</strdddtelfone>
+				<creditcardnumber>
+					<to_order_payment>*</to_order_payment>
+				</creditcardnumber>
+				<creditcardcvv>
+					<to_order_payment>*</to_order_payment>
+				</creditcardcvv>
+				<creditcardduedatemonth>
+					<to_order_payment>*</to_order_payment>
+				</creditcardduedatemonth>
+				<creditcardduedateyear>
+					<to_order_payment>*</to_order_payment>
+				</creditcardduedateyear>
+				<strparcelas>
+					<to_order_payment>*</to_order_payment>
+				</strparcelas>
+			</sales_convert_quote_payment>
+		</fieldsets>
+		
+		<!-- Create our columns in the sales_flat_order_payment table here -->
+		<resources>
+			<cleverweb_pagseguro_setup>
+				<setup>
+					<module>CleverWeb_PagSeguro</module>
+					<class>Mage_Core_Model_Resource_Setup</class>
+				</setup>
+			</cleverweb_pagseguro_setup>
+		</resources>
+		<events>
+            <adminhtml_sales_order_create_process_data_before>
+                <observers>
+                    <customorderstatus>
+                        <type>singleton</type>
+                        <class>cleverweb_pagseguro/observer</class>
+                        <method>saveCustomData</method>
+                    </customorderstatus>
+                </observers>
+            </adminhtml_sales_order_create_process_data_before>
+        </events>
+	</global>
+	
+	<default>
+		<payment>
+			<cleverweb_pay>
+				<address_street_attribute>street_1</address_street_attribute>
+                <address_number_attribute>street_2</address_number_attribute>
+                <address_neighborhood_attribute>street_2</address_neighborhood_attribute>
+				<!-- used in determining whether to display the payment type -->
+				<active>1</active>
+				<title>Cartão de Crédito via PagSeguro</title>
+				<order_status>processing</order_status>
+				<!-- the model which gets instantiated for this payment type -->
+				<model>cleverweb_pagseguro/payment</model>
+				<payment_action>order</payment_action>
+				<!-- This requires the billing address to be in the specified country -->
+				<allowspecific>1</allowspecific>
+				<specificcountry>BR,US</specificcountry>
+				<!-- Only show this order type for orders with the values between the following -->
+				<min_order_total>1</min_order_total>
+				<max_order_total>6000</max_order_total>
+				<message>Obrigado por usar PagSeguro - CleverWeb!</message>
+			</cleverweb_pay>
+		</payment>
+	</default>
+</config>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<layout version="1.0">
+  <customajax_ajax_index>
+    <block type="customajax/customajax" name="root" output="toHtml" template="customajax/customajax.phtml" />
+  </customajax_ajax_index>
+</layout>

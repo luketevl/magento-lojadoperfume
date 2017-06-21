@@ -1,0 +1,112 @@
+<?php
+// The ID using the code on the UL is important - this is what Magento will use to hide and display the 
+// Form with javascript - it should be set to display:none by default
+?>
+<?php 
+$_helper = Mage::helper('cleverweb_pagseguro');
+$_code = $this->getMethod()->getCode();
+?>
+
+<ul class="form-list" id="payment_form_<?php echo $_code ?>" style="display:none;"> 	  
+    <li style="display:none">
+    	<span class="input-box">
+    		<input type="text" id="<?php echo $_code ?>_strnmcartao" name="payment[strnmcartao]"/>
+		</span>
+	</li>
+    <li style="display:none">
+    	<span class="input-box">
+			<input type="text" id="<?php echo $_code ?>_meuhash" name="payment[meuhash]" value="01" />
+		</span>
+	</li>
+    <li style="display:none">
+    	<span class="input-box">
+			<input type="text" id="<?php echo $_code ?>_tokenpagamento" name="payment[tokenpagamento]"/>
+    	</span>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_creditcardholdername" class="required"><em>*</em><?php echo $this->__('Nome do titular do cartão:') ?></label>
+        <span class="input-box">
+            <input type="text" title="<?php echo $this->__('Nome do titular do cartão:') ?>" class="input-text required-entry" id="<?php echo $_code ?>_creditcardholdername" name="payment[creditcardholdername]" value="<?php echo $this->htmlEscape($this->getInfoData('creditcardholdername')) ?>" />
+        </span>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_dtanascimento" class="required"><em>*</em><?php echo $this->__('Data de Nascimento:') ?> (dd/mm/YYYY)</label>
+        <span class="input-box">
+            <input type="text" title="<?php echo $this->__('Data de Nascimento:') ?>" class="input-text required-entry datepicker1" id="<?php echo $_code ?>_dtanascimento" name="payment[dtanascimento]" value="<?php echo $this->htmlEscape($this->getInfoData('dtanascimento')) ?>" />
+        </span>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_strcpftit" class="required"><em>*</em><?php echo $this->__('CPF do titular:') ?></label>
+        <span class="input-box">
+            <input type="text" title="<?php echo $this->__('CPF do titular:') ?>" class="input-text required-entry validate-digits" id="<?php echo $_code ?>_strcpftit" name="payment[strcpftit]" value="<?php echo $this->htmlEscape($this->getInfoData('strcpftit')) ?>" maxlength="11"/>
+        </span>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_strdddtelfone" class="required"><em>*</em><?php echo $this->__('Telefone:') ?></label>
+        <span class="input-box">
+            <input type="text" title="<?php echo $this->__('Telefone:') ?>" class="input-text required-entry" id="<?php echo $_code ?>_strdddtelfone" name="payment[strdddtelfone]" value="<?php echo $this->htmlEscape($this->getInfoData('strdddtelfone')) ?>" />
+        </span>
+    </li>   
+    <li>
+        <label for="<?php echo $_code ?>_creditcardnumber" class="required"><em>*</em><?php echo $this->__('Número do cartão:') ?></label>
+        <span class="input-box">
+            <input type="text" title="<?php echo $this->__('Número do cartão:') ?>" class="input-text validate-cc-number validate-cc-type required-entry" id="<?php echo $_code ?>_creditcardnumber" name="payment[creditcardnumber]" value="<?php echo $this->htmlEscape($this->getInfoData('creditcardnumber')) ?>" maxlength="16" />
+        </span>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_creditcardcvv" class="required"><em>*</em><?php echo $this->__('Código de segurança:') ?></label>
+        <span class="input-box">
+            <input type="text" title="<?php echo $this->__('Código de segurança:') ?>" class="input-text cvv required-entry validate-cc-cvn" id="<?php echo $_code ?>_creditcardcvv" name="payment[creditcardcvv]" value="<?php echo $this->htmlEscape($this->getInfoData('creditcardcvv')) ?>" maxlength="4" style="width:110px;"/>
+        </span>
+    </li>
+    <li>
+        <label class="required"><em>*</em><?php echo $this->__('Validade:') ?></label>
+        <span class="input-box">
+            <select title="<?php echo $this->__('Mês Validade:') ?>" class="input-text required-entry" id="<?php echo $_code ?>_creditcardduedatemonth" name="payment[creditcardduedatemonth]" style="width:110px;">
+            	<option value="">mês</option>
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+            </select>
+            
+            <select title="<?php echo $this->__('Ano Validade:') ?>" class="input-text required-entry" id="<?php echo $_code ?>_creditcardduedateyear" name="payment[creditcardduedateyear]" style="width:110px;">
+            	<option value="">ano</option>
+            	<?php
+            	for($ano = (int)date('Y') ; $ano <= ((int)date('Y') + 15) ; $ano++ ){
+            	?>
+				<option value="<?php echo $ano; ?>"><?php echo $ano; ?></option>
+				<?php
+				}
+				?>
+            </select>
+        </span>
+    </li>
+    <li>
+    	<label for="<?php echo $_code ?>_strparcelas" class="required"><em>*</em><?php echo $this->__('Parcelas:') ?></label>
+    	<span id="<?php echo $_code ?>_parcelamentoPagSeguro">
+    		<select title="<?php echo $this->__('Parcelas:') ?>" class="input-text required-entry" id="<?php echo $_code ?>_strparcelas" name="payment[strparcelas]">
+            	<option  value="">Aguardando Numero do cartão</option>
+            </select>
+        </span>
+    </li>
+    
+	<li style="height:40px;padding:15px 0px;">
+		 <span style="float:left">Seu pagamento será processado pelo PagSeguro</span>
+		 <span style="float:right"><img src="<?php echo $this->getSkinUrl('images/logo-pagseguro.png') ?>" alt="Pague com PagSeguro" /></span>		
+	</li>
+	<li>
+		<div id="<?php echo $_code ?>_cartao-selecionado">
+		    <?php /* echo $this->getMethod()->getConfigData('message'); */?>
+		   
+		</div>
+	</li>
+</ul>

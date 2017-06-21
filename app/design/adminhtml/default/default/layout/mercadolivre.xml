@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <mercadolivre_adminhtml_mercadolivre_index>
+        <reference name="content">
+            <block type="mercadolivre/adminhtml_mercadolivre" name="mercadolivre" />
+        </reference>
+    </mercadolivre_adminhtml_mercadolivre_index>
+</layout>

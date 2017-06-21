@@ -1,0 +1,473 @@
+ or ,ou
+'%value%' appears to be a DNS hostname but cannot extract TLD part,'%value%' parece ser um nome de alojamento DNS mas não pode extrair parte TLD
+'%value%' appears to be a DNS hostname but cannot match TLD against known list,'%value%' parece ser um nome de alojamento DNS mas não consegue encontrar TLD contra a lista conhecida
+'%value%' appears to be a DNS hostname but cannot match against hostname schema for TLD '%tld%','%value%' parece ser um nome de alojamento DNS mas não pode ser comparado contra o esquema nome de alojamento para TLD '%tld%'
+'%value%' appears to be a DNS hostname but contains a dash in an invalid position,'%value%' parece ser um nome de alojamento DNS mas contém um traço em uma posição inválida
+'%value%' appears to be a DNS hostname but the given punycode notation cannot be decoded,'%value%' parece ser um DNS de alojamento mas a notação punycode dada não pode ser descodificada
+'%value%' appears to be a local network name but local network names are not allowed,'%value%' parece ser um nome de rede local mas nomes de rede local não são permitidos
+"'%value%' appears to be an IP address, but IP addresses are not allowed","'%value%' parece ser um endereço IP, mas endereços IP não são permitidos"
+'%value%' does not appear to be a valid local network name,'%value%' não parece ser um nome de rede local válido
+* Required Fields,* Campos obrigatórios
+ALL GROUPS,TODOS OS GRUPOS
+Account Dashboard,Painel de Conta
+Account Information,Informações da Conta
+Account Sharing Options,Opções de Compartilhamento de Conta
+"Account confirmation is required. Please, check your e-mail for confirmation link. To resend confirmation email please <a href=""%s"">click here</a>.","Confirmação da conta é necessária. Por favor, verifique seu email para o link de confirmação. Para reenviar email de confirmação, por favor <a href=""%s"">clique aqui</a>."
+Action,Ação
+Add New Address,Adicionar Novo Endereço
+Add New Customer,Adicionar Novo Cliente
+Add New Customer Group,Adicionar Novo Grupo de Clientes
+Added From,Adicionado De
+Additional Address Entries,Entradas Adicionais de Endereço
+Address,Endereço
+Address Book,Livro de Endereços
+Address Books,Livros de Endereço
+Address Information,Informações de Endereço
+Address Templates,Modelos de Endereço
+Addresses,Endereços
+Admin,Admin
+All,Todos
+All Store Views,Todas as Visualizações da Loja
+All countries,Todos os países
+Always optional.,Sempre opcional.
+Amount,Valor
+An error occurred while deleting the address.,Ocorreu um erro enquanto apagando este endereço.
+An error occurred while retrieving the option value: %s.,Ocorreu um erro ao recuperar o valor da opção: %s.
+"An error occurred while saving the collection, aborting. Error: %s","Ocorreu um erro ao salvar a coleção, abortando. Erro: %s"
+"An invalid option ID is specified for %s (%s), skipping the record.","Um ID de opção inválido é especificado para %s (%s), ignorando o registro."
+Approved,Aprovado
+Are you sure that you want to remove this item?,Tem certeza de que deseja remover este item?
+Are you sure you want to cancel adding of this address?,Você tem certeza que quer cancelar a adição deste endereço?
+Are you sure you want to delete this address?,Tem certeza de que deseja excluir este endereço?
+Are you sure?,Tem certeza?
+Array of Entity collections is expected.,Variedade de coleções de Entidades é esperado.
+Assign a Customer Group,Atribuir um Grupo de Clientes
+Average Sale,Venda Média
+Back,Voltar
+Back - link to the previously viewed page,Voltar - link para a página anteriormente visualizada
+Back to Login,Voltar à Entrada
+Bad request.,Mau pedido.
+"Based on the VAT ID, the customer would belong to the Customer Group %s.","Com base na ID do VAT, o cliente pertence ao Grupo de clientes %s."
+Bill to Name,Faturar para Nome
+Bought From,Comprado De
+"By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.","Ao criar uma conta na nossa loja, você será capaz de se mover através do processo de compra mais rapidamente, armazenar múltiplos endereços de envio, ver e rastrear seus pedidos em sua conta e muito mais."
+CSV,CSV
+Cancel,Cancelar
+Cannot save a new password.,Não foi possível salvar uma nova senha.
+Cannot save address.,Não é possível salvar endereços.
+Cannot save the customer.,Não é possível salvar o cliente.
+Cannot share customer accounts globally because some customer accounts with the same emails exist on multiple websites and cannot be merged.,Não é possível compartilhar contas de clientes globalmente porque alguns clientes existem em vários sites com mesmas contas de email e não podem ser misturados.
+Change Account Password,Alterar a Senha da Conta
+Change Billing Address,Alterar o endereço de faturamento
+Change Password,Alterar senha
+Change Shipping Address,Alterar endereço de remessa
+City,Cidade
+Company,Companhia
+Config,Config
+Configure,Configurar
+Confirm New Password,Confirmar a nova senha
+Confirm Password,Confirmar a senha
+Confirmation Link Email,Email de Link de Confirmação
+Confirmed,Confirmado
+Contact Information,Informações de contato
+Continue Shopping,Continuar Comprando
+Country,País
+Create,Criar
+Create New Account Options,Criar Novas Opções de Conta
+Create New Customer Account,Criar Nova Conta de Cliente
+Create Order,Criar Pedido
+Create an Account,Criar uma conta
+Create customer,Criar cliente
+Create customer address,Criar endereço de cliente
+Current Password,Senha atual
+Customer,Cliente
+Customer API,API de cliente
+Customer Account Edit Form,Editar formulário da conta do cliente
+Customer Account Login Form,Formulário de login da conta do cliente
+Customer Account Logout Success,Saída com sucesso da conta do cliente
+Customer Account Registration Form,Formulário de registro da conta do cliente
+Customer Addresses,Endereços do cliente
+Customer Configuration,Configuração do cliente
+Customer Forgot Password Form,Formulário Esqueceu a senha do cliente
+Customer Group,Grupo de Clientes
+Customer Groups,Grupos do cliente
+Customer Information,Dados do Cliente
+Customer Login,Login do cliente
+Customer My Account (All Pages),Minha conta do cliente (Todas as páginas)
+Customer My Account Address Book,Livro de endereço da Minha conta do cliente
+Customer My Account Address Edit Form,Formulário de editar endereço da Minha conta do cliente
+Customer My Account Dashboard,Painel da Minha conta do cliente
+Customer Since,Cliente desde
+Customer View,Visualização do cliente
+Customer collection expected.,É esperada a coleta do cliente.
+Customer email is required,É necessário o e-mail do cliente
+Customer website ID must be specified when using the website scope,O ID do site do cliente deve ser especificado ao utilizar o escopo do site
+"Customer will stay on the current page if ""No"" is selected.","O cliente irá permanecer na página atual se ""Não"" for selecionado."
+Customers,Clientes
+Customers Only,Apenas Clientes
+Customers Section,Seção de Clientes
+DD,DD
+Date,Data
+Date Added,Data de Adição
+Date of Birth,Data de aniversário
+Day,Dia
+Days in Wishlist,Dias na Lista de Desejos
+Default Addresses,Endereço padrão
+Default Billing Address,Endereço padrão de faturamento
+Default Email Domain,Domínio de E-Mail Padrão
+Default Group,Grupo Padrão
+Default Shipping Address,Endereço padrão de entrega
+Default Value for Disable Automatic Group Changes Based on VAT ID,Valor padrão para alterações automáticas desativadas de grupos com base na ID de VAT
+Default Welcome Email,E-Mail de Boas-Vindas Padrão
+Delete,Excluir
+Delete Address,Apagar endereço
+Delete Customer,Excluir Cliente
+Delete Customer Group,Excluir Grupo de Clientes
+Delete customer,Excluir cliente
+Delete customer address,Excluir endereço do cliente
+Deleted Stores,Excluir Lojas
+Details,Detalhes
+Disabled,Desativado
+Edit,Editar
+Edit Account Info,Editar Informações da Conta
+Edit Account Information,Editar informações da conta
+Edit Address,Editar endereço
+Edit Address Entry,Editar entrada de endereço
+"Edit Customer Group ""%s""","Editar grupo de cliente ""%s"""
+Edit Customer Groups,Editar grupos de cliente
+Edit Customer's Address,Editar o endereço do cliente
+Edit Group,Editar grupo
+Edit Newsletters,Editar boletins informativos
+Email,E-mail
+Email Address,Endereço de e-mail
+Email Sender,Remetente do e-mail:
+Email:,E-mail:
+Enable Automatic Assignment to Customer Group,Ativar atribuição automática a um grupo de clientes
+Entity collection is expected.,É esperada a coleta da entidade.
+Excel XML,Excel XML
+Failed to confirm customer account.,Erro ao tentar confirmar a conta do cliente.
+Fax,Fax
+First Name,Primeiro nome
+Forgot Email Template,Esqueceu o modelo do e-mail
+Forgot Password,Esqueceu a Senha?
+Forgot Your Password,Esqueceu a senha
+Forgot Your Password?,Esqueceu a senha?
+Forgot and Remind Email Sender,Rementente de email lembrete e esquecimento
+Form Fields Before,Campos do formulário antes
+From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.,No Painel da Minha Conta é possível visualizar um resumo das atividades recentes da sua conta e atualizar as informações da conta. Selecione o link abaixo para visualizar ou editar as informações.
+Gender,Sexo
+Gender is required.,Sexo necessário
+General Subscription,Assinatura geral
+Generate Human-Friendly Customer ID,Gerar ID de Cliente Humano-Amigável
+Global,Global
+Group,Grupo
+Group Information,Informação de Grupo
+Group Name,Nome de Grupo
+Group for Invalid VAT ID,Grupo para ID de VAT inválida.
+Group for Valid VAT ID - Domestic,Grupo para ID de VAT válida - Doméstico
+Group for Valid VAT ID - Intra-Union,Grupo para ID de VAT válida - Intra-União
+Guest,Convidado
+HTML,HTML
+"Hello, %s!","Olá, %s!"
+ID,Identidade
+IP Address,Endereço de IP
+"If you believe this is an error, please contact us at %s","Se você considera isso um erro, entre em contato conosco em %s"
+"If you have an account with us, please log in.","Se você possui uma conta conosco, por favor, faça seu login"
+"Invalid attribute option specified for attribute %s (%s), skipping the record.",Opção de atributo inválida para atributo %s (%s). Saltando o registro.
+"Invalid attribute set specified, skipping the record.","Conjunto especificado de atributo inválido, ignorando o registro."
+Invalid billing address for (%s),Endereço de cobrança inválido para (%s)
+Invalid current password,Senha atual inválida
+Invalid customer data,Dados do cliente inválidos
+"Invalid email address ""%s"".","Endereço de email inválido ""%s""."
+Invalid email address.,Endereço de e-mail inválido.
+Invalid login or password.,Acesso ou senha inválida.
+Invalid password reset token.,Senha inválida reconfigure vale.
+Invalid shipping address for (%s),Endereço de envio inválido para (%s)
+"Invalid store specified, skipping the record.","Loja especificada inválida, ignorando o registro."
+"Invalid website, skipping the record, line: %s","Website inválido, ignorar registro, linha: %s"
+Last Activity,Última atividade
+Last Date Subscribed,Última Data de Assinatura
+Last Date Unsubscribed,Última Data de Cancelamento
+Last Name,Último nome
+Last URL,Último URL
+Leave empty for default (15 minutes).,Deixar em branco por padrão (15 minutos).
+Leave empty for default (2). Valid range: 1-4,Deixar em branco por padrão (2). Intervalo válido: 1-4
+Lifetime Sales,Vendas de Vida Inteira
+Log In,Entrar
+Log Out,Sair
+Login,Conectar-se
+Login Information,Informações de login
+Login Options,Opções de Acesso
+Login and password are required.,Acesso e senha são obrigatórios.
+Login or Create an Account,Conectar-se ou criar conta
+MM,MM
+Manage Addresses,Gerenciar endereços
+Manage Customers,Gerenciar clientes
+Maximum length must be less then %s symbols,O comprimento máximo deve ser menos que %s símbolos.
+"Missing email, skipping the record, line: %s","Falta o email, ignorar registro, linha: %s"
+"Missing email, skipping the record.","Erro de e-mail, pular o registro"
+"Missing first name, skipping the record, line: %s","Falta o primeiro nome, ignorar registro, linha: %s"
+"Missing firstname, skipping the record.","Faltando nome próprio, ignorando o registro."
+"Missing last name, skipping the record, line: %s","Falta o último nome, ignorar registro, linha: %s"
+"Missing lastname, skipping the record.","Faltando apelido, ignorando o registro."
+"Missing website, skipping the record, line: %s","Falta o website, ignorar registro, linha: %s"
+Month,Mês
+My Account,Minha Conta
+My Account Wrapper,Envoltório da Minha Conta
+My Dashboard,Meu Painel
+My Orders,Meus Pedidos
+Name,Nome
+Name and Address Options,Opções de Nome e Endereço
+Never,Nunca
+New Address,Novo Endereço
+New Address Entry,Nova entrada de endereço
+New Customer,Novo Cliente
+New Customer Address,Endereço do Novo Cliente
+New Customer Group,Novo grupo de cliente
+New Customer Groups,Grupos do Novo Cliente
+New Customers,Novos clientes
+New Group,Novo Grupo
+New Password,Nova senha
+New account,Nova conta
+New account confirmation key,Chave de confirmação da nova conta
+New account confirmed,Nova conta confirmada
+New password field cannot be empty.,O campo de preenchimento de nova senha não pode ser deixado em branco.
+Newsletter,Newsletter
+Newsletter Finish,Final de boletim informativo
+Newsletter Information,Informações de boletim à imprensa
+Newsletter Received,Boletim informativo recebido
+Newsletter Start,Início do boletim à imprensa
+Newsletter Subscription,Assinatura do boletim informativo
+Newsletters,Boletins informativos
+No Items Found,Nenhum item encontrado
+No Newsletter Found,Nenhum boletim informativo foi encontrado
+No customer collections found,Nenhuma coleção de cliente encontrada
+No item specified.,Nenhum item especificado.
+Not Sent,Não Enviado
+"Not confirmed, can login","Não confirmado, pode fazer o login"
+"Not confirmed, cannot login","Não confirmado, não é possível conectar-se"
+Number of Lines in a Street Address ,Número de linhas em um endereço de rua
+Offline,Offline
+Online,Online
+Online Customers,Clientes Conectados
+Online Customers Options,Opções de clientes online
+Online Minutes Interval,Invervalo de minutos online
+Order #,Ordem #
+Order Total,Total do Pedido
+Orders,Ordens
+PDF,PDF
+Password,Senha
+Password Management,Gerenciamento de senha
+Password Options,Opções de Senha
+Password forgotten,Senha esquecida
+Password:,Senha:
+Paused,Parado.
+Pending,Pendente
+Per Website,Por Site Web
+Personal Information,Informações pessoais
+Please enter a number 1 or greater in this field.,Digite o número 1 ou maior neste campo.
+Please enter a valid date between %s and %s at %s.,Digite uma data válida entre %s e %s em %s.
+Please enter a valid date equal to or greater than %s at %s.,Digite uma data válida igual ou maior que %s em %s.
+Please enter a valid date less than or equal to %s at %s.,Digite uma data válida menor que ou igual a %s em %s.
+Please enter the city.,Insira a cidade.
+Please enter the country.,Insira o país.
+Please enter the first name.,Por favor informe o primeiro nome.
+Please enter the last name.,Por favor informe o último nome.
+Please enter the state/province.,Insira o estado.
+Please enter the street.,Insira a rua.
+Please enter the telephone number.,Insira o número de telefone.
+Please enter the zip/postal code.,Insira o CEP.
+Please enter your email address below. You will receive a link to reset your password.,Por favor informe o seu endereço de e-mail abaixo. Você receberá um link para redefinir sua senha.
+Please enter your email below and we\'ll send you confirmation link for it.,Digite seu e-mail abaixo e enviaremos o link de confirmação.
+Please enter your email.,Por favor insira seu email.
+Please make sure your passwords match.,Por favor certifique-se que suas senhas coincidem.
+Please select a website which contains store view,Selecione o website que contém visualização de loja
+"Please select region, state or province","Selecione a região, estado ou província"
+"Please, check your email for confirmation key.","Por favor, verifique seu email para a chave de confirmação."
+Prefix Dropdown Options,Lista de opções de prefixo
+Price,Preço
+Product,Produto
+Product ID,ID do Produto
+Product Name,Nome do produto
+Product Reviews,Comentários sobre Produto
+Product Tags,Etiquetas de Produto
+Purchase On,Compra Em
+Purchased On,Comprado Em
+Qty,Quant.
+Recent Orders,Pedidos Recentes
+Records for %s store found.,Registros para loja %s encontrados.
+Recovery Link Expiration Period (days),Perído de validade do link de recuperação (dias)
+Redirect Customer to Account Dashboard after Logging in,Redirecione Cliente para o Painel de Conta após a Acessar
+Refunded,Reembolsado
+Register,Cadastrar
+Registered Customers,Clientes cadastrados
+Remind Email Template,Modelo de email lembrete
+Remind Password,Lembrar senha
+Remove,Remover
+Require Emails Confirmation,Confirmação de e-mail obrigatória
+Reset a Password,Redefinir uma senha
+Retrieve address data,Recupere dados de endereço
+Retrieve address info,Recupere informação de endereço
+Retrieve customer addresses,Recuperar endereço do cliente
+Retrieve customer data,Recupere dados do cliente
+Retrieve customer groups,Recuperar grupos do cliente
+Retrieve customer info,Recuperar informações do cliente
+Retrieve customers,Recuperar clientes
+Retrieve your confirmation link here,Recupere aqui o seu link de confirmação
+Retrieve your password here,Recupere sua senha aqui
+SKU,Unidade de Manutenção de Estoque
+Sales Statistics,Estatísticas de vendas
+Save,Salvar
+Save Address,Salvar endereço
+Save Customer,Salvar cliente
+Save Customer Group,Salvar grupo de cliente
+Save Password,Salvar senha
+Save and Continue Edit,Salvar e continuar a editar
+Saved %d record(s),%d registro(s) salvo(s)
+Semicolon (;) separated values.<br/>Put semicolon in the beginning for empty first option.<br/>Leave empty for open text field.,Valores separados por ponto e vírgula (;).<br/>Coloque ponto e vírgula no início para definir como vazia a primeira opção.<br/>Deixe em brando para abrir campo de texto.
+Send Auto-Generated Password,Enviar senha auto-gerada
+Send From,Enviar De
+Send Welcome Email,Enviar e-mail de boas-vindas
+Send Welcome Email after Confirmation,Enviar e-mail de boas-vindas após confirmação
+Send confirmation link,Enviar link de confirmação
+Sending,Enviando
+Sent,Enviado
+Session Start Time,Horário de início da sessão
+Set as Default Billing Address,Definir como endereço padrão de faturamento
+Set as Default Shipping Address,Ajustar como endereço de entrega padrão
+Share Customer Accounts,Compartilhar contas do cliente
+Shipped to First Name,Enviado para o primeiro nome
+Shipped to Last Name,Enviado para o último nome
+Shipped to Name,Enviado para o nome
+Shopping Cart,Carrinho de compras
+Shopping Cart - %d item(s),Carrinho de compras - %d item(ns)
+Shopping Cart of %1$s - %2$d item(s),Carrinho de compras de %1$s - %2$d item(ns)
+Show Date of Birth,Exibir a data de aniversário
+Show Gender,Exibir o gênero
+Show Middle Name (initial),Exibir nome do meio (inicial)
+Show Prefix,Exibir o prefixo
+Show Suffix,Exibir o sufixo
+Show Tax/VAT Number,Exibir número fiscal
+Show VAT Number on Frontend,Mostrar Número VAT na Frente
+Sign Up for Newsletter,Assinar o boletim informativo
+"Skipping import row, required field ""%s"" is not defined.","Ignorar linha de importação, campo ""%s"" exigido não está definido."
+"Skipping import row, website ""%s"" field does not exist.","Pular a fileira de importação, o campo ""%s"" do site não existe."
+State/Province,Estado/Província
+Status,Status
+Store,Loja
+Store View,Visualização da loja
+Street Address,Endereço da rua
+Street Address %s,Endereço da Rua %s
+Subject,Assunto
+Submit,Enviar
+Subscribe to Newsletter,Assinar o Boletim Informativo
+Subscribed to Newsletter?,Já assinou o boletim informativo?
+Suffix Dropdown Options,Opções de Sufixo Pendente
+Tag Name,Nome de Marca
+Tax Calculation Based On,Cálculo da Taxa Baseado em
+Tax Class,Classe de Impostos
+Tax/VAT number,Número de Taxas/IVA
+Telephone,Telefone
+Text,Texto
+Text One Line,Texto Uma Linha
+Thank you for registering with %s.,Obrigado por se registar com %s.
+The Date of Birth is required.,Necessária a data de nascimento.
+The TAX/VAT number is required.,Necessário o número de VAT/TAX.
+The VAT ID entered (%s) is not a valid VAT ID.,A ID de VAT inserida (%s) não é uma ID de VAT válida.
+The VAT ID entered (%s) is not a valid VAT ID. The customer would belong to Customer Group %s.,A ID de VAT inserida (%s) não é uma ID de VAT válida. O cliente pertenceria o Grupo de clientes %s.
+The VAT ID is valid. The current Customer Group will be used.,A ID de VAT é válida. O grupo de clientes atual será usado.
+The account information has been saved.,As informações da conta foram salvas.
+The address does not belong to this customer.,O endereço não pertence a este cliente.
+The address has been deleted.,O endereço foi apagado.
+The address has been saved.,O endereço foi salvo.
+"The customer ID and email did not match, skipping the record, line: %s","A ID e o email de cliente não correspondem,"
+The customer does not have default billing address.,O cliente não tem endereço de cobrança predefinido.
+"The customer email (%s) already exists, skipping the record, line: %s","O emal de cliente (%s) já existe, ignorar o registro, linha: %s"
+The customer group has been deleted.,O grupo de clientes foi apagado.
+The customer group has been saved.,O grupo de clientes foi salvo.
+The customer is currently assigned to Customer Group %s.,O cliente está atualmente atribuído ao grupo de clientes %s.
+The first name cannot be empty.,O primeiro nome não pode ficar vazio.
+"The group ""%s"" cannot be deleted","O grupo ""%s"" não pode ser apagado"
+The last name cannot be empty.,O último nome não pode ficar vazio.
+The minimum password length is %s,O comprimento mínimo da senha é %s.
+The password cannot be empty.,A senha não pode ficar vazia.
+The password must have at least 6 characters. Leading or trailing spaces will be ignored.,A senha deve ter pelo menos 6 caracteres. Espaços à esquerda ou à direita serão ignorados.
+"The suffix that goes after name (Jr., Sr., etc.)","O sufixo que vai atrás do nome (Jr., Sr., etc.)"
+"The title that goes before name (Mr., Mrs., etc.)","O título que vai antes do nome (Sr., Sra., etc.)"
+There are no items in customer's wishlist at the moment,No momento não há itens na lista de desejos do cliente
+There are no items in customer\'s shopping cart at the moment,Não há itens no carrinho de compras do cliente no momento
+"There is already an account with this email address. If you are sure that it is your email address, <a href=""%s"">click here</a> to get your password and access your account.","Já existe uma conta com este endereço de email. Se você tem certeza que é o seu endereço de email, <a href=""%s"">clique aqui</a> para obter a sua senha e acessar sua conta."
+There was an error validating the VAT ID.,Ocorreu um erro ao validar a ID do VAT.
+There was an error validating the VAT ID. The customer would belong to Customer Group %s.,Ocorreu um erro ao validar a ID do VAT. O cliente pertenceria ao grupo de clientes %s.
+This account is not confirmed.,Essa conta não está confirmada.
+This customer email already exists,Este email do cliente já existe
+This customer has no saved addresses.,Este cliente não tem endereços guardados.
+This email does not require confirmation.,Este email não requer confirmação.
+"This email will be sent instead of default welcome email, after account confirmation.","Este e-mail será enviado ao invés do e-mail predefinido de boas vindas, após a confirmação da conta."
+This is My Default %s Address,Este é o Meu Endereço %s Padrão
+To Cart,Para Carrinho
+"To show VAT number on frontend, set Show VAT Number on Frontend option to Yes.","Para mostrar o número VAT na frente, marque a opção Mostrar Número VAT na Frente como Sim."
+Total,Total
+Type,Tipo
+Unable to save the customer.,Não foi possível salvar o cliente.
+Unknown,Desconhecido
+Unsubscribe from Newsletter,Cancelar a assinatura do boletim informativo
+Update,Atualizar
+Update customer address data,Atualizar os dados de endereço do cliente
+Update customer data,Atualizar dados do cliente
+Use as My Default %s Address,Use como Meu Endereço %s Padrão
+Use as My Default Billing Address,Utilizar como endereço padrão de faturamento
+Use as My Default Shipping Address,Use como Meu Endereço de Entrega Predefinido
+Use as my default billing address,Use como meu endereço de cobrança padrão
+Use as my default shipping address,Use como meu endereço de entrega padrão
+VAT Number,Número VAT
+VAT Request Date,Data de solicitação de VAT
+VAT Request Identifier,Identificador de solicitação de VAT
+Validate VAT Number,Validar número de VAT
+Validate on Each Transaction,Validar em cada transação
+Validation Error Group,Validar grupo de erro
+View,Ver
+View Order,Ver Solicitação
+Visitor,Visitante
+Visitors Only,Apenas visitantes
+Website,Website
+Welcome Email,E-mail de boas-vindas
+Wishlist,Lista de presentes
+Wishlist - %d item(s),Lista de presentes - %d item(ns)
+Would you like to change the Customer Group for this order?,Gostaria de alterar o grupo de cliente para este pedido?
+Wrong confirmation key.,A chave de confirmação está errada.
+Wrong customer account specified.,Conta especificada de cliente errada.
+Wrong email.,E-mail errado.
+Wrong transactional account email type,O tipo de e-mail de conta transacional está errado
+YYYY,AAAA
+Year,Ano
+You are currently not subscribed to any newsletter.,Você não está inscrito em nenhum boletim informativo.
+You are currently not subscribed to our newsletter.,Você ainda não assinou o nosso boletim informativo.
+You are currently subscribed to 'General Subscription'.,"Você está atualmente inscrito em ""Assinatura Geral""."
+You are currently subscribed to our newsletter.,Você está atualmente inscrito em nosso boletim informativo.
+You are now logged out,Agora você está desconectado
+You have logged out and will be redirected to our homepage in 5 seconds.,Você se desconectou e será redirecionado para a nossa página inicial em 5 segundos.
+You have no additional address entries in your address book.,Você não tem nenhuma entrada de endereço adicional no seu livro de endereços.
+You have no additional entries in your address book.,Você não tem entradas adicionais em seu livro de endereços.
+You have no default billing address in your address book.,Você não tem endereço de cobrança padrão no seu livro de endereços.
+You have no default entries in your address book.,Você não tem entradas padrão em seu livro de endereços.
+You have no default shipping address in your address book.,Você não tem endereço de entrega padrão no seu livro de endereços.
+You have not set a default billing address.,Você não configurou um endereço de faturamento padrão.
+You have not set a default shipping address.,Você não definiu um endereço de envio.
+You have placed no orders yet.,Você ainda não fez pedidos.
+You have placed no products yet.,Você ainda não colocou nenhum produto.
+You will be charged tax.,Imposto devido.
+You will not be charged tax.,Não é devido imposto.
+Your Tax ID cannot be validated.,Sua ID de imposto não pode ser validada.
+Your VAT ID was successfully validated.,Sua ID de VAT foi validada com sucesso.
+Your account balance is: %s,O saldo da sua conta é: %s
+ZIP,CEP
+ZIP/Post Code,Código Postal
+Zip/Postal Code,Zip/Código Postal
+n/a,n/d
+or,ou
+register,registrar
+Company Banner,Banner da Empresa
+Middle Name/Initial,Nome do meio
+Company Name,Nome da Empresa
+Company Locality,Endere�o da Empresa

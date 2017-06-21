@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <CleverWeb_Customajax>
+             <active>true</active>
+             <codePool>community</codePool>
+        </CleverWeb_Customajax>
+    </modules>
+</config>

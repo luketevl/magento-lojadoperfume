@@ -1,0 +1,263 @@
+
+/*OTHERS*/
+
+
+/*OVERWRITES*/
+.nav-primary{
+  margin-top: 0 !important;
+}
+.nav-primary a{
+  color: #FFF !important;
+  text-transform: initial !important;
+}
+
+
+.skip-cart, .skip-link{
+  color: #FFF !important;
+    background-color: transparent !important;
+}
+
+
+.footer .block-title,
+.block-title h2,
+.block-title h3,
+.block-title strong,
+.footer .links a:hover,
+h2, 
+.h2,
+h1, 
+.h1,
+h3, 
+.h3,
+h4
+{
+  color: #694187 !important;
+  text-transform: initial !important;
+}
+.block-title strong{
+  font-size: 18px !important;
+
+}
+.footer .links a{
+  text-transform: initial !important;
+}
+
+.formas-pagamento li.hiper {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons-lojadoperfume.png);
+    background-position: 0 -2596px;
+    height: 23px;
+    width: 43px;
+}
+.formas-pagamento li.amex {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons-lojadoperfume.png);
+    background-position: 0 -2639px;
+    height: 23px;
+    width: 53px;
+}
+
+.formas-pagamento li.visa {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons-lojadoperfume.png);
+    background-position: 0 -2682px;
+    height: 23px;
+    width: 55px;
+}
+
+.formas-pagamento li.master {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons-lojadoperfume.png);
+    background-position: 0 -2725px;
+    height: 23px;
+    width: 36px;
+}
+
+.formas-pagamento li.dinners {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons-lojadoperfume.png);
+    background-position: 0 -2768px;
+    height: 23px;
+    width: 30px;
+}
+
+.formas-pagamento li.boleto {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons-lojadoperfume.png);
+    background-position: 0 -2811px;
+    height: 23px;
+    width: 30px;
+}
+
+select, input[type=email], input[type=search], input[type=number], input[type=password], input[type=tel], input[type=text]{
+  height: 40px !important;
+}
+
+/*PLUGINS */
+
+.bestseller .owl-carousel {
+    border: 1px solid #f5f5f5;
+}
+
+.price-con{
+  color: #f58220;
+  font-size: 16px;
+}
+
+.product-name a{
+  text-transform: initial
+}
+
+.camera_wrap .camera_pag .camera_pag_ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  right: initial !important;
+}
+
+/* NEW THEME*/
+
+.myButton,
+.btn, 
+.button{
+
+}
+.myButton--primary{
+
+}
+.myButton--primary:hover{
+  
+}
+.myButton--accent{
+
+}
+.myButton--accent:hover{
+  
+}
+
+.mheader{
+  display: flex;
+  padding: 10px 0;
+}
+.mheader__btn--primary{
+  background-color: #FFF !important;
+}
+
+.mheader__btn--primary .mheader__btn__content{
+  color: #694187 !important;
+}
+.mheader__btn--primary:hover{
+  background-color: #784d98 !important;
+}
+.mheader__btn--primary:hover  .mheader__btn__content{
+  color: #FFF !important;
+}
+.mheader--bg, .mNavPrimary--bg{
+  background-color: #694187;
+}
+
+.mheader__icon{
+  width: 34px;
+  height: 34px;
+}
+.mtopmenu__itens{
+  list-style-type: none;
+}
+.mtopmenu__itens > a{
+  text-transform: initial !important;
+}
+.mNavPrimary{
+  border-top: 1px solid #784d98;
+}
+
+.mNavPrimary .mtopmenu__itens{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.mpagueSeguranca{
+  padding: 10px 0;
+}
+.mpagueSeguranca__title{
+  font-size: 28px;
+}
+.mpagueSeguranca__itens{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+.mpagueSeguranca__info{
+  margin-top: 5px;
+}
+
+.mnewsLetter{
+  background-color: #694187;
+  padding: 20px 0;
+}
+.mnewsLetter__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+.mnewsLetter__form{
+  display: flex;
+  flex-wrap: wrap;
+}
+.mnewsLetter__input{
+  width: 55% !important;
+  margin-right: 8px;
+}
+
+.mnewsLetter__button{
+  margin: 0 4px;
+}
+.mnewsLetter__info,
+.mnewsLetter__title{
+ color: #FFF !important;
+}
+.mnewsLetter__title{
+ font-size: 28px;
+}
+
+.mfooter--bg {
+  background-color: #f5f5f5;
+}
+
+.mfooter__container{
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mfooterCopy{
+ 
+  padding: 20px 0;
+  text-align: center;
+}
+.mfooterCopy__content{
+  color: #cecece;
+  margin-bottom: 0 !important;
+}
+
+.msocial a{
+  display: flex;
+  color: #694187;
+}
+
+.msocial img{
+  color: #694187;
+}

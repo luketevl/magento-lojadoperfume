@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <CleverWeb_Customretorno>
+      <version>0.1.0</version>
+    </CleverWeb_Customretorno>
+  </modules>
+  <global>
+    <blocks>
+        <cleverweb_customretorno>
+            <class>CleverWeb_Customretorno_Block</class>
+        </cleverweb_customretorno>
+    </blocks>
+</global>
+  <frontend>
+    <routers>
+      <customretorno>
+        <use>standard</use>
+        <args>
+          <module>CleverWeb_Customretorno</module>
+          <frontName>customretorno</frontName>
+        </args>
+      </customretorno>
+    </routers>
+    <layout>
+      <updates>
+        <customretorno>
+          <file>customretorno.xml</file>
+        </customretorno>
+      </updates>
+    </layout>
+  </frontend>
+</config>

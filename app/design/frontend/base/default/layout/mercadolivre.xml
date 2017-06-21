@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+    <mercadolivre_index_index>
+        <reference name="content">
+            <block type="mercadolivre/mercadolivre" name="mercadolivre" template="mercadolivre/mercadolivre.phtml" />
+        </reference>
+    </mercadolivre_index_index>
+</layout>

@@ -1,0 +1,3 @@
+<?php
+class CleverWeb_Customretorno_Block_Customretorno extends Mage_Core_Block_Template{
+}

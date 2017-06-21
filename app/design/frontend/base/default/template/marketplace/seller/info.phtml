@@ -1,0 +1,129 @@
+<?php
+/**
+ * Cybage Marketplace Plugin
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * It is available on the World Wide Web at:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you are unable to access it on the World Wide Web, please send an email
+ * To: Support_Magento@cybage.com.  We will send you a copy of the source file.
+ *
+ * @category   Marketplace Plugin
+ * @package    Cybage_Marketplace
+ * @copyright  Copyright (c) 2014 Cybage Software Pvt. Ltd., India
+ *             http://www.cybage.com/pages/centers-of-excellence/ecommerce/ecommerce.aspx
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Cybage Software Pvt. Ltd. <Support_Magento@cybage.com>
+ */
+?>
+<?php $seller = $this->getSellerData();?>
+<?php if (!empty($seller)):?>
+<div class="page-title">
+    <h1><?php echo $seller['firstname']." ".$seller['lastname'].$this->__(" - Perfil") ?></h1>
+</div>
+<div class="store-details">
+    <div class="sub-heading"><h5><?php echo $this->__('Sobre ').$seller['company_name']?></h5></div>
+    <p><?php echo $seller['company_description']?></p>
+    <?php if(!empty($seller['company_banner'])):?>
+        <div class="company-banner" style="display: none;">
+            <img src="<?php echo $seller['company_banner']?>" width="<?php echo Mage::getStoreConfig('marketplace/marketplace/default_width').'px'?>" height="<?php echo Mage::getStoreConfig('marketplace/marketplace/default_height').'px'?>" />
+        </div>
+    <?php endif;?>
+    <table class="data-table" style="display: none;">
+    <?php if ($seller['company_locality']):?>
+        <tr>
+            <th width="30%"><?php echo $this->__('Locality:')?></th>
+            <td width="80%"><?php echo $seller['company_locality']?></td>
+        </tr>
+    <?php endif;?>
+    <?php if ($seller['company_description']):?>
+        <tr>
+            <th width="30%"><?php echo $this->__('Company description:')?></th>
+            <td width="80%"><?php echo $seller['company_description']?></td>
+        </tr>
+    <?php endif;?>
+    </table>
+   
+<?php
+/*
+echo '<br />';
+foreach ($seller as $indice=>$valor) {
+	echo $indice.'='.$valor.'<br />';
+}
+*/
+$idLoja = $seller['entity_id'];
+$collection = Mage::getModel('catalog/product')->getCollection()->setOrder('name', 'ASC');
+$produtos = array();
+$i = 0;
+$_columnCount = 3;
+$_collectionSize = $collection->count();
+foreach ($collection as $product) {     
+	$data = Mage::getModel('catalog/product')->load($product->getId()); 
+	//$attributeId = $data->getResource()->getAttribute('seller_id')->getAttributeId();	
+	$attributeId = $data['seller_id'];
+	//$productPrice = $data->getPrice();
+	$productBlock = $this->getLayout()->createBlock('catalog/product_price');
+	$productPrice = $productBlock->getPriceHtml($data, true);
+	//echo '<br />';
+	if($attributeId==$idLoja){
+	
+	if ($i++%$_columnCount==0):
+	?>
+		<ul class="products-grid products-grid--max-3-col first last odd">
+	<?php
+	endif;
+	?>
+			<li class="item last">
+				<a href="<?php echo $data->getProductUrl() ?>" class="product-image">
+					<img src="<?php echo $this->helper('catalog/image')->init($data, 'small_image')->resize(275) ?>" border="0" />
+				</a>
+				<div class="product-info" style="padding-bottom: 75px; min-height: 176px;">
+					<h2 class="product-name">
+						<a href="<?php echo $data->getProductUrl() ?>" title="<?php echo $data->getName(); ?>">
+							<?php echo $data->getName(); ?> 
+						</a>
+					</h2>
+					<div class="price-box">
+                    	<span class="regular-price" id="product-price-6">
+                        	<span class="price"> <?php echo $productPrice; ?></span>
+                        </span>                        
+        			</div>
+        			<div class="actions">
+                        <?php if($data->isSaleable()): ?>
+	                        <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')) ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($data) ?>')"><span><span><?php echo $this->__('COMPRAR') ?></span></span></button>
+	                    <?php else: ?>
+	                        <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+	                    <?php endif; ?>
+                        
+                        <ul class="add-to-links" style="display:none;">
+                        	<li>
+                        		
+                        	</li>
+                            <li>
+                            	
+                            </li>
+                        </ul>
+                    </div>
+				</div>				
+			</li>
+	<?php	
+	if ($i%$_columnCount==0 || $i==$_collectionSize):
+	?>
+		</ul>
+	<?php
+	endif;
+	
+	}
+}
+
+?>
+
+
+
+ 
+</div>
+<?php else:?>
+<h5><?php echo $this->__("This customer doesn't exist.")?></h5>
+<?php endif; ?>

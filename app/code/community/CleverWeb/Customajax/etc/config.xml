@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <CleverWeb_Customajax>
+      <version>0.1.0</version>
+    </CleverWeb_Customajax>
+  </modules>
+  <global>
+    <blocks>
+        <cleverweb_customajax>
+            <class>CleverWeb_Customajax_Block</class>
+        </cleverweb_customajax>
+    </blocks>
+</global>
+  <frontend>
+    <routers>
+      <customajax>
+        <use>standard</use>
+        <args>
+          <module>CleverWeb_Customajax</module>
+          <frontName>customajax</frontName>
+        </args>
+      </customajax>
+    </routers>
+    <layout>
+      <updates>
+        <customajax>
+          <file>customajax.xml</file>
+        </customajax>
+      </updates>
+    </layout>
+  </frontend>
+</config>

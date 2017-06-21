@@ -1,0 +1,9 @@
+<?xml version="1.0"?>  
+<config>  
+    <modules>
+        <CleverWeb_PagSeguro>
+            <active>true</active>
+            <codePool>community</codePool>
+        </CleverWeb_PagSeguro>
+    </modules>
+</config> 

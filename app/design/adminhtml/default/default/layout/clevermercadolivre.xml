@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <default>
+    	<block type="mercadolivre/adminhtml_anuncios" name="anuncios_grid" template="cleverweb_ml/anuncios.phtml">
+    		<action method="_prepareLayout"><block_id>sample_links</block_id></action>
+    	</block>
+    </default>
+</layout>
+

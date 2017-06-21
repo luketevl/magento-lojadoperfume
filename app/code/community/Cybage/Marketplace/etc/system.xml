@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Cybage Marketplace Plugin
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * It is available on the World Wide Web at:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you are unable to access it on the World Wide Web, please send an email
+ * To: Support_Magento@cybage.com.  We will send you a copy of the source file.
+ *
+ * @category   Marketplace Plugin
+ * @package    Cybage_Marketplace
+ * @copyright  Copyright (c) 2014 Cybage Software Pvt. Ltd., India
+ *             http://www.cybage.com/pages/centers-of-excellence/ecommerce/ecommerce.aspx
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Cybage Software Pvt. Ltd. <Support_Magento@cybage.com>
+ */
+-->
+<config>
+    <tabs>
+        <cybage>
+            <label>Cybage</label>
+            <sort_order>200</sort_order>
+        </cybage>
+    </tabs>
+    <sections>
+        <marketplace translate="label" module="marketplace">
+            <label>Marketplace</label>
+            <tab>cybage</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <marketplace translate="label">
+                    <label>Marketplace Plugin</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label">
+                            <label>Ativar Marketplace</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+                        <auto_approval_seller translate="label">
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                            <label>Aprovação Automática do Vendedor</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </auto_approval_seller>
+                        <default_approval_product translate="label">
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                            <label>Aprovação padrão do produto para o Marketplace</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </default_approval_product>                
+                        <default_commission translate="label">
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                            <label>Padrão Comissão Percentual</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </default_commission>
+                        <default_width translate="label">
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                            <label>Largura Padrão do Banner da Empresa</label>
+                            <comment>Padrão da Banner da Empresa Largura em pixel.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>required-entry validate-digits</validate>
+                        </default_width>
+                        <default_height translate="label">
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                            <label>Altura Padrão da bandeira da empresa</label>
+                            <comment>Padrão da bandeira da empresa Altura em pixel.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>required-entry validate-digits</validate>
+                        </default_height> 
+                        <default_logo_width translate="label">
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                            <label>Largura Padrão do Logo da Empresa</label>
+                            <comment>Logotipo da Empresa Largura padrão em pixel.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>required-entry validate-digits</validate>
+                        </default_logo_width>
+                        <default_logo_height translate="label">
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                            <label>Padrão Altura do logotipo da empresa</label>
+                            <comment>Empresa Logo Padrão Altura em pixel.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>required-entry validate-digits</validate>
+                        </default_logo_height> 
+                    </fields>
+                </marketplace>
+                <product translate="label">
+                    <label>Produto</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <status translate="label">
+                            <label>Status do novo produto</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>marketplace/system_config_source_product_status</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </status>
+                        <state translate="label">
+                            <label>Estado do novo produto</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>marketplace/system_config_source_product_state</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </state>
+                        <visibility>
+                            <label>Visibilidade de novos produtos</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>marketplace/system_config_source_product_visibility</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </visibility>
+                        <upload_image_size>
+                            <label>Tamanho do arquivo de upload</label>
+                            <comment>O tamanho do arquivo deve estar em bytes.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upload_image_size>
+                        <pending translate="label">
+                            <label>ID de estado pendente</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>marketplace/system_config_source_product_state</source_model>
+                            <sort_order>20</sort_order>
+
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pending>
+                        <approved translate="label">
+                            <label>ID de estado aprovado</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>marketplace/system_config_source_product_state</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </approved>
+                        <rejected translate="label">
+                            <label>ID de estado rejeitado</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>marketplace/system_config_source_product_state</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </rejected>
+                        <deleted translate="label">
+                            <label>ID de estado eliminado</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>marketplace/system_config_source_product_state</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </deleted>
+                    </fields>
+                </product>
+                <status translate="label">
+                    <label>Configuração do ID do status do vendedor</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>21</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <pending translate="label">
+                            <label>ID de status pendente</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>marketplace/customatributestatus</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pending>
+                        <approved translate="label">
+                            <label>ID do estado aprovado</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>marketplace/customatributestatus</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </approved>
+                        <rejected translate="label">
+                            <label>Id de status rejeitado</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>marketplace/customatributestatus</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </rejected>
+                        <deleted translate="label">
+                            <label>ID de estado eliminado</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>marketplace/customatributestatus</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </deleted>
+                    </fields>
+                </status>
+                <seller translate="label">
+                    <label>Configurações de e-mail</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>                        
+                        <email_template translate="label">
+                                <label>E-mail de boas-vindas do vendedor</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_email_template</source_model>
+                                <sort_order>3</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                        </email_template>
+                        <email_status_template translate="label">
+                                <label>Modelo de e-mail de status</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_email_template</source_model>
+                                <sort_order>4</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                        </email_status_template>
+                        <email_payment_template translate="label">
+                                <label>Modelo de e-mail da Comissão de Pagamento</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_email_template</source_model>
+                                <sort_order>5</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                        </email_payment_template>
+                        <order_pending_reminder_template translate="label">
+                                <label>Modelo de e-mail de lembrete de pedido pendente</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_email_template</source_model>
+                                <sort_order>6</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                        </order_pending_reminder_template>
+                        <order_pending_before_days translate="label">
+                                <label>Lembrete de colocação de pedidos (após dias específicos)</label>
+                                <frontend_type>text</frontend_type>                                
+                                <sort_order>7</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                        </order_pending_before_days>
+                    </fields>
+                </seller>
+            </groups>
+        </marketplace>
+    </sections>
+</config>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <cw>
+            <label>Cw</label>
+            <sort_order>200</sort_order>
+        </cw>
+    </tabs>
+    <sections>
+        
+    </sections>
+</config>

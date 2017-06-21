@@ -1,0 +1,58 @@
+<div class="main-container col2-right-layout">
+            <div class="main">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="col-main">
+                    
+                    
+                    <?php if (($_products = $this->getProductCollection()) ): ?>  
+                    	<??>
+					    <div class="box base-mini">
+					        <div class="head">
+					            <h4>Produtos Em Destaque</h4>
+					        </div>
+					        <div class="content">
+					        	<ul class="products-grid products-grid--max-4-col first last odd">
+					            <?php $_collectionSize = $_products->getSize() ?>					
+					            <?php $i = 0;
+					            foreach ($_products as $_product): ?>
+					                <?php if ($i++ % 2 == 0): ?>					
+					                <?php endif ?>					
+					                <?php if ($i % 2 == 0 && $i != $_collectionSize): ?>					
+					                <?php endif ?>					               
+					                    <li class="item last">
+					                    	<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName());?>" class="product-image">
+							                   <img id="product-collection-image-1" src="<?php echo $this->helper('catalog/image')->init(
+					                                    $_product,
+					                                    'small_image'
+					                                )->resize(270, 270); ?>" alt="<?php echo $this->htmlEscape($_product->getName()) ?>">
+							                </a>
+					                    	<div class="product-info" style="padding-bottom: 149px; min-height: 212px;">
+								                    <h2 class="product-name">
+								                    	<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName());?>">
+								                    		<?php echo $this->htmlEscape($_product->getName()); ?>
+								                    	</a>
+								                    </h2>                        
+								    				<div class="price-box">
+								                    	<span class="regular-price" id="product-price-1">
+								                        	<span class="price"><?php echo $this->getPriceHtml($_product, true) ?></span>                                    
+								                        </span>								                        
+								        			</div>
+								        			<div class="add-to-cart-buttons">
+								            			<button type="button" title="Adicionar ao carrinho" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span>COMPRAR</span></span></button>
+								                    </div>								        			
+								                </div>
+					                    </li>		                				
+					            <?php endforeach ?>
+					            </ul>
+					           
+					            
+					        </div>
+					    </div>					
+					<?php endif; ?>  
+                    
+                    
+                </div>
+                <div class="col-right sidebar"><?php echo $this->getChildHtml('right') ?></div>
+            </div>
+            <div><?php echo $this->getChildHtml('newreference') ?></div>
+        </div>

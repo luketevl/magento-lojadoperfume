@@ -1,0 +1,51 @@
+<?php
+// The ID using the code on the UL is important - this is what Magento will use to hide and display the 
+// Form with javascript - it should be set to display:none by default
+?>
+<?php 
+$_helper = Mage::helper('cleverweb_pagseguroboleto');
+$_code = $this->getMethod()->getCode();
+?>
+
+<ul class="form-list" id="payment_form_<?php echo $_code ?>" style="display:none;"> 	  
+    <li style="display:none">
+    	<span class="input-box">
+    		<input type="text" id="<?php echo $_code ?>_strnmcartao" name="payment[strnmcartao]"/>
+		</span>
+	</li>
+    <li style="display:none">
+    	<span class="input-box">
+			<input type="text" id="<?php echo $_code ?>_meuhash" name="payment[meuhash]" value="01" />
+		</span>
+	</li>
+    <li style="display:none">
+    	<span class="input-box">
+			<input type="text" id="<?php echo $_code ?>_tokenpagamento" name="payment[tokenpagamento]"/>
+    	</span>
+    </li>
+   
+    <li>
+        <label for="<?php echo $_code ?>_strcpftit" class="required"><em>*</em><?php echo $this->__('CPF do titular:') ?></label>
+        <span class="input-box">
+            <input type="text" title="<?php echo $this->__('CPF do titular:') ?>" class="input-text required-entry validate-digits" id="<?php echo $_code ?>_strcpftit" name="payment[strcpftit]" value="<?php echo $this->htmlEscape($this->getInfoData('strcpftit')) ?>" maxlength="11"/>
+        </span>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_strdddtelfone" class="required"><em>*</em><?php echo $this->__('Telefone:') ?></label>
+        <span class="input-box">
+            <input type="text" title="<?php echo $this->__('Telefone:') ?>" class="input-text required-entry" id="<?php echo $_code ?>_strdddtelfone" name="payment[strdddtelfone]" value="<?php echo $this->htmlEscape($this->getInfoData('strdddtelfone')) ?>" />
+        </span>
+    </li>   
+   
+       
+	<li style="height:40px;padding:15px 0px;">
+		 <span style="float:left">Seu pagamento será processado pelo PagSeguro</span>
+		 <span style="float:right"><img src="<?php echo $this->getSkinUrl('images/logo-pagseguro.png') ?>" alt="Pague com PagSeguro" /></span>		
+	</li>
+	<li>
+		<div id="<?php echo $_code ?>_cartao-selecionado">
+		    <?php /* echo $this->getMethod()->getConfigData('message'); */?>
+		   
+		</div>
+	</li>
+</ul>

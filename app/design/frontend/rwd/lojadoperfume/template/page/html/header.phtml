@@ -1,0 +1,88 @@
+<?php
+/**
+ * cleverweb.com.br
+ *
+ * @category    design
+ * @package     rwd_lojadoperfume
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.cleverweb.com.br)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+
+<div class="topbar100" xmlns="http://www.w3.org/1999/xhtml">
+	<div class="topbar">
+		<div class="welc">
+		
+			<div class="ajax-content-loader" rel="/no-cache/user/welcome">
+		        <p class="welcome"> 
+		        Olá <span class="visitante"><?php echo $this->getChildHtml('accountLinks') ?></span>, <?php echo $this->getChildHtml('welcome') ?>
+		        <em><a id="login"></a></em></p><div class="logaqui"><em>Entre por <a href="/Site/Login.aspx">aqui</a></em></div><em>
+		        </em>
+		        <p></p>
+			</div>
+		</div>
+		<!-- welc -->
+		<ul class="menu_topbar">
+			<li class="televendas"><p>Televendas: <span>(21) 3202.7555</span></p></li>
+			<li class="meuspedidos"><a href="/account/orders">Meus Pedidos</a></li>
+			<li class="atendimento"><a href="/centralatendimento">Atendimento</a></li>
+		</ul>
+	</div>
+	<!-- topbar -->
+</div>
+
+<div class="top100" xmlns="http://www.w3.org/1999/xhtml">
+	<div class="top">
+	<div class="logo">
+		<a href="/">
+			<img src="<?php echo $this->getLogoSrcSmall() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="small" width="100%" />
+		</a>
+	</div>
+	<div class="search">
+		<script type="text/javascript" language="javascript"> /*<![CDATA[*/ $(document).ready(function(){currentDept = '0'; enableFullTextSearchBox('ftBox305aa15c1acf4ead9931ba46abd03f34', 'ftDept305aa15c1acf4ead9931ba46abd03f34', 'ftIdx305aa15c1acf4ead9931ba46abd03f34', 'ftBtn305aa15c1acf4ead9931ba46abd03f34', '/SEARCHTERM','Busque por produtos, marcas etc' );}); /*]]>*/ </script>
+		<fieldset class="busca">
+			<legend>Buscar no site</legend>
+			<label>Buscar</label>
+			<?php echo $this->getChildHtml('topSearch') ?>
+		</fieldset>
+	</div>
+	<!-- search -->
+	<div class="regua">
+	  <ul>
+	    <li class="frete">
+	      <p>FRETE GRÁTIS</p>
+	      <span>acima de R$ 99</span>
+	    </li>
+	    <li class="parcela">
+	      <span>até</span>
+	      <i>10x</i>
+	      <p>SEM JUROS</p>
+	    </li>
+	  </ul>
+	</div>
+	<!-- regua -->
+	<a class="carrinho">
+		
+	</a>
+		<span class="item"><?php echo $this->getChildHtml('minicart_head'); ?></span>
+	
+	<!-- carrinho -->
+	</div>
+	<!-- top -->
+</div>
+
+
+<nav class="menu100" xmlns="http://www.w3.org/1999/xhtml">
+	<div class="menu">
+		<?php echo $this->getChildHtml('topMenu') ?>
+	</div>
+</nav>
+
+
+
+
+
+
+<?php echo $this->getChildHtml('topContainer'); ?>

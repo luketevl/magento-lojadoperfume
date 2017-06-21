@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cw_Ml>
+            <version>0.1.0</version>
+        </Cw_Ml>
+    </modules>
+    <frontend>
+        <routers>
+            <ml>
+                <use>standard</use>
+                <args>
+                    <module>Cw_Ml</module>
+                    <frontName>ml</frontName>
+                </args>
+            </ml>
+            <customer>
+                <args>
+                    <modules>
+                        <cw_ml before="Mage_Customer">Cw_Ml</cw_ml>
+                    </modules>
+                </args>
+            </customer>	
+        </routers>            
+    </frontend>
+    <admin>
+        <routers>
+            <ml>
+                <use>admin</use>
+                <args>
+                    <module>Cw_Ml</module>
+                    <frontName>ml</frontName>
+                </args>
+            </ml>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Cw_Ml_Adminhtml before="Mage_Adminhtml">Cw_Ml_Adminhtml</Cw_Ml_Adminhtml>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>        
+        <layout>
+            <updates>
+                <ml>
+                    <file>marketplace.xml</file>
+                </ml>
+            </updates>
+        </layout>
+    </adminhtml>
+    <global>         
+        <models>
+            <ml>
+                <class>Cw_Ml_Model</class>
+                <resourceModel>ml_resource</resourceModel>
+            </ml>           
+           
+        </models>
+        <resources>
+            <ml_setup>
+                <setup>
+                    <module>Cw_Ml</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+            </ml_setup>
+        </resources>
+        <helpers>
+            <ml>
+                <class>Cw_Ml_Helper</class>
+            </ml>
+        </helpers>
+        <blocks>           
+            <marketplace>
+                <class>Cw_Ml_Block</class>
+            </marketplace>          
+            
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_grid>Cw_Ml_Block_Adminhtml_Catalog_Product_Grid</catalog_product_grid>
+                </rewrite>
+            </adminhtml>
+            <!--Show products of approved seller only-->
+            <catalog>
+                <rewrite> 
+                   <product_list>Cw_Ml_Block_Catalog_Product_List</product_list>
+                </rewrite>
+             </catalog>
+             <!--Show products of approved seller only-->
+      </blocks>
+       
+        
+    </global>
+    
+</config>
