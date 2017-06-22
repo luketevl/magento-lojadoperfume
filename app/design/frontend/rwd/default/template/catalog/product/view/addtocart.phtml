@@ -30,13 +30,46 @@
     <div class="add-to-cart">
         <?php if(!$_product->isGrouped()): ?>
         <div class="qty-wrapper">
-            <label for="qty"><?php echo $this->__('Qty:') ?></label>
-            <input type="text" pattern="\d*(\.\d+)?" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Qty')) ?>" class="input-text qty" />
+            <div class="mactionBuy">
+                <label class="mactionBuy__title" for="qty"><?php echo $this->__('Qty:') ?></label>
+                <div class="mqty">
+                    <button class="mqty__button qtyMinus" >-</button>
+                    <input type="number" class="mqty__input targetQty" pattern="\d*(\.\d+)?" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Qty')) ?>" class="input-text qty" />
+                    <button class="mqty__button qtyPlus">+</button>
+                </div>
+                <div class="add-to-cart-buttons">
+                    <div class="mactionBuy__buy">
+                        <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>
+                        <div class="col-md-12">
+                            <p class="text-center"><img src="http://i.imgur.com/9nb06sD.png" style="display: inline-block" class="img-responsive"/> Compra Segura</p>
+                        </div>
+                        <?php echo $this->getChildHtml('', true, true) ?>
+                    </div>
+                    
+                </div>
+            </div>
+           
         </div>
         <?php endif; ?>
-        <div class="add-to-cart-buttons">
-            <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>
-            <?php echo $this->getChildHtml('', true, true) ?>
-        </div>
+       
     </div>
 <?php endif; ?>
+
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        $ = jQuery;
+        $('.qtyPlus').click(function(){
+            var qty = $(this).parent().find('.targetQty').val();
+            console.log(qty);
+            console.log($(this).parent().find('.targetQty'));
+
+            $(this).parent().find('.targetQty').val(++qty) ;
+        });
+        $('.qtyMinus').click(function(){
+            var qty = $(this).parent().find('.targetQty').val();
+            if(qty > 0){
+             $(this).parent().find('.targetQty').val(--qty) ;
+            }
+        });
+});
+</script>

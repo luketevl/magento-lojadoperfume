@@ -60,11 +60,6 @@
                     <?php echo $this->getChildHtml('addto') ?>
                 </div>
             <?php endif; ?>
-            
-            
-            <?php echo $this->getChildHtml('catalog_product_view_sellerinfo');?>
-            &nbsp;|&nbsp;
-            <?php echo $this->getChildHtml('product_askquestion_link') ?>
             <?php echo $this->getChildHtml('other');?>
             <?php if ($_product->isSaleable() && $this->hasOptions()):?>
                 <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
@@ -151,34 +146,50 @@
     }
     </script>    
     </div>
-    <div class="product-collateral">
-    	<div class="box-collateral box-description">
-    	<ul>
-    	<?php if ($_product->getDescription()):?>
-    		<li><h2 onclick="boxdesc('a',this);"><?php echo $this->__('DESCRIÇÃO') ?></h2></li>
-    	 <?php endif;?>	
-    	<?php if ($_product->getShortDescription()):?>
-             <li><h2 onclick="boxdesc('b',this);"><?php echo $this->__('DETALHES') ?></h2></li>
-        <?php endif;?>
-        </ul>   
-           
+
+<?php echo $this->getChildHtml('catalog_product_view_sellerinfo');?>
+<div style="display:none">
+    <?php echo $this->getChildHtml('product_askquestion_link') ?>
+</div>
+
+
+<?php if ($_product->getDescription()):?>
+    <section class="mproductView">
+        <div class="mproductView__title bshead">
+            
+            <h2><?php echo $this->__('Description') ?></h2>
+        </div>
+        <div class="mbox">
         <?php if ($_product->getDescription()):?>
-    		<div id="box-description-descricao"><?php echo $_helper->productAttribute($_product, nl2br($_product->getDescription()), 'description') ?></div>
-    	 <?php endif;?>
-    	 <?php if ($_product->getShortDescription()):?>
-                <div id="box-description-detalhes" style="display:none;"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
-        <?php endif;?>       
-                   
-                
+            <?php echo $_helper->productAttribute($_product, nl2br($_product->getDescription()), 'description') ?>
+        <?php endif;?>   
+            <?php echo $html; ?>
+        </div>
+    </section>
+<?php endif;?>
+
+
+
+<?php if ($_product->getShortDescription()):?>
+    <section class="mproductView">
+        <div class="mproductView__title bshead">
             
-            
-                
-           
-    	</div>
+            <h2><?php echo $this->__('Details') ?></h2>
+        </div>
+        <div class="mbox">
+        <?php if ($_product->getShortDescription()):?>
+            <?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?>
+        <?php endif;?>   
+            <?php echo $html; ?>
+        </div>
+    </section>
+<?php endif;?>
 
         <?php echo $this->getChildHtml('upsell_products') ?>
         <?php echo $this->getChildHtml('product_additional_data') ?>
-    </div>
+
+
+
 </div>
 
 

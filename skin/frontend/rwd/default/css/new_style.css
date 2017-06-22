@@ -3,6 +3,15 @@
 
 
 /*OVERWRITES*/
+
+
+a,
+.product-view .product-shop .price-box .regular-price .price{
+  color: #694187 !important;
+}
+a:hover{
+  color: #f58220 !important;
+}
 .nav-primary{
   margin-top: 0 !important;
 }
@@ -102,9 +111,13 @@ h4
 }
 
 select, input[type=email], input[type=search], input[type=number], input[type=password], input[type=tel], input[type=text]{
-  height: 40px !important;
+  height: 50px !important;
 }
 
+
+.product-view .add-to-links a{
+  border: 0 !important;
+}
 /*PLUGINS */
 
 .owl-carousel {
@@ -139,8 +152,26 @@ select, input[type=email], input[type=search], input[type=number], input[type=pa
   top: 44px !important;
   background-color: #FFF !important;
 }
+
+.breadcrumbs li a,
+ .breadcrumbs li strong{
+  text-transform: initial;
+}
+.breadcrumbs li strong{
+  color: #694187 !important;
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.product-name h1{
+  color: inherit !important;
+  border: 0 !important;
+}
 /* NEW THEME*/
 
+.mlink--secundary{
+  color: #337ab7 !important;
+}
 .myButton,
 .btn, 
 .button{
@@ -157,6 +188,11 @@ select, input[type=email], input[type=search], input[type=number], input[type=pa
 }
 .myButton--accent:hover{
   
+}
+
+.mbox{
+  border: 1px solid #f5f5f5;
+  padding: 20px 15px;
 }
 
 .mheader{
@@ -298,4 +334,61 @@ select, input[type=email], input[type=search], input[type=number], input[type=pa
 
 .mcategoriesBadges__title{
   color: #784d98 ;
+}
+
+.mqty{
+  display: flex;
+  width: 200px;
+  /*align-items: stretch;*/
+}
+.mqty__input{
+  width: 78px !important;
+
+}
+.mqty__button{
+  margin: 0 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #CECED1;
+  border: 0;
+  border-bottom: 2px solid #969696;
+  box-shadow: initial;
+  height: 50px;
+}
+.mactionBuy{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.mactionBuy__title{
+  display: block;
+  width: 100%;
+}
+.add-to-cart .qty-wrapper{
+  width: 100%;
+}
+.product-view .add-to-cart{
+  border:0 !important;
+}
+.product-view .add-to-links{
+  float: right !important;
+}
+
+.product-view .add-to-links li{
+  float: initial !important;
+}
+.mproductView,
+.mproductView{
+  margin-top: 30px;
+}
+.mproductView__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mproductView__logo{
+  width: 100%;
+  max-width: 500px;
 }
