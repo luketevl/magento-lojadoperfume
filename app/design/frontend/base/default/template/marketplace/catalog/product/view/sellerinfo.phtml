@@ -31,7 +31,7 @@ $_helper = $this->helper('catalog/output');
             <?php $sellerId = $_product->getSellerId() ;
                 $sellerName = $this->getSellerName($sellerId);
                 $sellerData = Mage::helper('marketplace')->getSellerInfo($sellerName);
-                var_dump($sellerData);
+                // var_dump($sellerData);
                 $sellerCompany = $this->getSellerCompany($sellerId);
             ?>
         <div class="cold-xs-12 col-md-2 company-banner">
@@ -52,7 +52,7 @@ $_helper = $this->helper('catalog/output');
             </div>
 
             <div class="col-xs-12 col-md-3">
-                    <a class="ask-action"><img class="img-responsive" style="display:inline-block" src="http://i.imgur.com/OCTGS5f.png" /> Faça uma pergunta ao vendedor</a>
+                    <a class="ask-action"><img class="img-responsive" style="display:inline-block" src="http://i.imgur.com/7A9EUgY.png" /> Faça uma pergunta ao vendedor</a>
                 <?php echo $this->getChildHtml('product_askquestion_link') ?>
             </div>
 <script>

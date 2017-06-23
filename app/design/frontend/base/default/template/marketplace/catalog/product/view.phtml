@@ -185,9 +185,15 @@
     </section>
 <?php endif;?>
 
-        <?php echo $this->getChildHtml('upsell_products') ?>
-        <?php echo $this->getChildHtml('product_additional_data') ?>
-
+    <section class="mproductView">
+        <div class="mproductView__title bshead"></div>
+            <div class="mbox">
+            <?php echo $this->getChildHtml('upsell_products') ?>
+            <?php echo $this->getChildHtml('product_additional_data') ?>
+        </div>
+    </section>
+    
+    
 
 
 </div>

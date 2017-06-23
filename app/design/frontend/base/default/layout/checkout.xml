@@ -57,6 +57,8 @@ Default layout, loads most of the pages
         <label>Shopping Cart</label>
         <remove name="right"/>
         <remove name="left"/>
+        <remove name="footer" />
+
         <!-- Mage_Checkout -->
         <reference name="root">
             <action method="setTemplate"><template>page/1column.phtml</template></action>

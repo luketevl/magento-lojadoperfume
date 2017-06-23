@@ -47,7 +47,9 @@ h4
   font-size: 18px !important;
 
 }
-.footer .links a{
+.footer .links a,
+#discount-coupon-form label,
+.cart .cart-totals table{
   text-transform: initial !important;
 }
 
@@ -118,6 +120,15 @@ select, input[type=email], input[type=search], input[type=number], input[type=pa
 .product-view .add-to-links a{
   border: 0 !important;
 }
+
+.cart-totals{
+  background-color: transparent !important;
+  border: 0 !important;
+}
+.cart .page-title,
+.cart .cart-totals table tfoot{
+  border: 0 !important;
+}
 /*PLUGINS */
 
 .owl-carousel {
@@ -167,6 +178,10 @@ select, input[type=email], input[type=search], input[type=number], input[type=pa
   color: inherit !important;
   border: 0 !important;
 }
+
+.shipping .buttons-set {
+    margin: 4px 7px !important;
+    }
 /* NEW THEME*/
 
 .mlink--secundary{
@@ -175,7 +190,7 @@ select, input[type=email], input[type=search], input[type=number], input[type=pa
 .myButton,
 .btn, 
 .button{
-
+  height: 50px;
 }
 .myButton--primary{
 
@@ -190,6 +205,13 @@ select, input[type=email], input[type=search], input[type=number], input[type=pa
   
 }
 
+.myButton--neutro{
+  background-color: #CECED1 !important;
+  border: 0 !important;
+  border-bottom: 2px solid #969696 !important;
+  box-shadow: initial !important;
+  color: #FFF !important;
+}
 .mbox{
   border: 1px solid #f5f5f5;
   padding: 20px 15px;
@@ -223,7 +245,8 @@ select, input[type=email], input[type=search], input[type=number], input[type=pa
 .mtopmenu__itens{
   list-style-type: none;
 }
-.mtopmenu__itens > a{
+.mtopmenu__itens > a,
+.shipping .form-list label{
   text-transform: initial !important;
 }
 .mNavPrimary{
@@ -391,4 +414,15 @@ select, input[type=email], input[type=search], input[type=number], input[type=pa
 .mproductView__logo{
   width: 100%;
   max-width: 500px;
+}
+
+.mcep{
+  display: flex;
+}
+
+.mcart__infos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
 }
